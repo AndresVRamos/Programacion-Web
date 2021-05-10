@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-cuerpo',
   templateUrl: './cuerpo.component.html'
 })
+
 export class CuerpoComponent {
     
 }
