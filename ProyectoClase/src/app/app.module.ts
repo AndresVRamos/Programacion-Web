@@ -6,6 +6,8 @@ import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { CuerpoComponent } from './componentes/cuerpo/cuerpo.component';
 import { Cuerpo2Component } from './componentes/cuerpo2/cuerpo2.component';
 
+import { AppRoutingModule } from 'src/app/app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { Cuerpo2Component } from './componentes/cuerpo2/cuerpo2.component';
     Cuerpo2Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
