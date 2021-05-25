@@ -1,5 +1,14 @@
-<div class="card" style="width: 18rem;">
-    <ul *ngFor="let heroe of heroes; let i = index" class="list-group list-group-flush">
-        <li class="list-group-item">{{i+1}}.- {{heroe}}</li>
-    </ul>
+<div class="row col-md-212">
+    <div *ngFor="let heroe of heroes;  let i = index" class="list-group list-group-flush col-3">
+        <div class="card" style="width: 18rem; ">
+            <img src={{heroe.img}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nombre: {{ heroe.nombre }}</h5>
+                <p class="card-text">Biografía: {{heroe.bio}}</p>
+                <p class="card-text">Año de aparición: {{heroe.aparicion}}</p>
+                <p class="card-text">Casa: {{heroe.casa}}</p>
+
+            </div>
+        </div>
+    </div>
 </div>
