@@ -1,0 +1,14 @@
+<p>practica-cards works!</p>
+
+<div class="row col-md-2">
+    <div *ngFor="let heroe of heroes" class="card">
+      <img class="card-img-top" src={{heroe.img}}>
+      <div class="card-body">
+        <h5 class="card-title">{{heroe.nombre}}</h5>
+        <p class="card-text">{{heroe.bio}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{heroe.aparicion}}</small>
+      </div>
+    </div>
+</div>
