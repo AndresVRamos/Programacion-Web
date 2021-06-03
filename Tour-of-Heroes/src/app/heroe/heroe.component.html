@@ -1,0 +1,16 @@
+<div class="row m-3">
+    <div>
+        <div *ngFor="let heroe of heroes; let i = index">
+            <div class="card" style="width: 25%;">
+                <div class=row>
+                    <div class="col-6 text-white bg-primary" style="width: 25%;">
+                        <h5 class="card-title">{{heroe.id}}</h5>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="card-text">{{heroe.name}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
