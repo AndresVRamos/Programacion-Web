@@ -1,0 +1,93 @@
+<div class=m-5>
+    <h1>Añadir un contacto</h1>
+    <hr>
+</div>
+
+<form autocomplete="off" [formGroup]="formulario" (ngSubmit)="guardar()">
+
+    <div class="row m-5">
+        <div class=col>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Nombre</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Nombre" formControlName="nombre" style="width: 150%;" >
+                </div>
+            </div>
+        </div>
+
+        <div class=col>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Apellido</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Apellido" formControlName="apellido" style="width: 150%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-5">
+        <div class="form-group">
+            <label class="col-2 col-form-label">Descripción</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Descripción" formControlName="descripcion"
+                    style="width: 150%; height: 150px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-5">
+        <div class=col>
+            <label class="col-2 col-form-label">Sexo</label>
+            <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect01" formControlName="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+        </div>
+
+        <div class=col>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Empresa</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Escribe aquí tu empresa" formControlName="empresa"
+                        style="width: 150%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-5">
+        <div class=col>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Email (*)</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Email" formControlName="email" style="width: 150%;">
+                </div>
+            </div>
+        </div>
+
+        <div class=col>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Teléfono (*)</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Teléfono" formControlName="telefono" style="width: 150%"
+                        maxlength="10">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row m-5">
+        <label class="col-2 col-form-label">&nbsp;</label>
+        <div class="input-group col-md-8">
+            <button type="submit" class="btn btn-outline-primary btn-block">
+                Guardar
+            </button>
+        </div>
+    </div>
+
+</form>
+
+
+
