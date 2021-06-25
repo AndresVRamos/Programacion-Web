@@ -18,4 +18,20 @@ export class TablaUsuariosComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  actualizar( item: any ) {
+    console.log('actualizando');
+    console.log(this.usuarios[item]);
+    
+  }
+
+  eliminar( item:any ) {
+    console.log('eliminando')
+    const _id = this.usuarios[item]._id;
+
+    console.log(_id);
+    this.service.deleteUsuario(_id).subscribe( res => {
+      console.log(res);
+    });
+  }
 }
