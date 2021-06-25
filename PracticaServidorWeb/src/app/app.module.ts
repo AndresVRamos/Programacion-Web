@@ -7,12 +7,18 @@ import { FormularioComponent } from './componentes/formulario/formulario.compone
 import { TablaUsuariosComponent } from './componentes/tabla-usuarios/tabla-usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { CrearUsuarioComponent } from './componentes/crear-usuario/crear-usuario.component';
+import { ActualizarUsuarioComponent } from './componentes/actualizar-usuario/actualizar-usuario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    TablaUsuariosComponent
+    TablaUsuariosComponent,
+    NavbarComponent,
+    CrearUsuarioComponent,
+    ActualizarUsuarioComponent
   ],
   imports: [
     BrowserModule,
